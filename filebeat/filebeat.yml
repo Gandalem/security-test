@@ -1,0 +1,20 @@
+filebeat.inputs:
+  - type: filestream
+    id: cloud-security-dashboard-sample-logs
+    enabled: true
+    paths:
+      - /var/log/cloud-security-dashboard/auth.log
+      - /var/log/cloud-security-dashboard/access.log
+      - /var/log/cloud-security-dashboard/app.log
+      - /var/log/cloud-security-dashboard/syslog
+    fields:
+      project: cloud-security-dashboard
+    fields_under_root: true
+
+output.elasticsearch:
+  hosts: ["http://localhost:9200"]
+  index: "raw-logs-filebeat"
+
+setup.ilm.enabled: false
+setup.template.name: "raw-logs"
+setup.template.pattern: "raw-logs-*"

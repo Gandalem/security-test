@@ -1,0 +1,3 @@
+Jun 25 09:30:00 ip-10-0-0-10 systemd: Started Session 324 of user ubuntu.
+Jun 25 09:31:00 ip-10-0-0-10 cron: (root) CMD (/usr/local/bin/rotate-secrets.sh)
+Jun 25 09:32:00 ip-10-0-0-10 sudo: pam_unix(sudo:session): session opened for user root by ubuntu(uid=1000)

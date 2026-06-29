@@ -1,0 +1,5 @@
+2026-06-25T09:20:00+09:00 INFO user=alice ip=198.51.100.11 Checkout completed successfully
+2026-06-25T09:21:00+09:00 ERROR user=service-account ip=198.51.100.12 Database timeout while processing billing
+2026-06-25T09:22:00+09:00 ERROR user=service-account ip=198.51.100.12 Retry failure while processing billing
+2026-06-25T09:23:00+09:00 ERROR user=service-account ip=198.51.100.12 Circuit breaker open for billing backend
+2026-06-25T09:24:00+09:00 WARN user=bob ip=198.51.100.13 Slow response detected from recommendation service
